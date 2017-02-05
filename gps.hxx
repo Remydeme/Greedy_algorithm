@@ -1,6 +1,6 @@
 #include "gps.hh"
 
-inline const memory& Gps::road_get() const
+inline const Gps::memory& Gps::road_get() const
 {
 	return road_;
 }

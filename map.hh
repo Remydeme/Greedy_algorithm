@@ -3,7 +3,8 @@
 #include <fstream>
 #include "tile.hh"
 
-
+namespace gps
+{
 class Map
 {
 
@@ -19,13 +20,19 @@ class Map
 	void load_dimension(std::ifstream& input);
         void create_matrice();
         const Tile& get_position() const;
-	
+
+	const Tile& operator()(const int x, const int y) const ;
+
+
+
 	// work with the map
 	
-	private:
+	protected:
 
 	map_t map_;
 	int lines_;
 	int columns_;
 	Tile position_;
 };
+
+}

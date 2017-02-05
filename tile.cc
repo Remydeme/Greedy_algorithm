@@ -1,7 +1,8 @@
 #include "Tile.hh"
 
 
-
+ namespace gps
+ {
 Tile::Tile(int x, int y) : x_(x), y_(y)
 {
 }
@@ -86,3 +87,4 @@ int operator *(const Tile& t_1, const Tile& t_2)
 	Tile res = Tile(t_1 - t_2);
 	return res.get_x() * res.get_x() + res.get_y() * res.get_y();
 }
+ }

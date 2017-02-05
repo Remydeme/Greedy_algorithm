@@ -1,7 +1,7 @@
 #include "map.hh"
 
-
-
+namespace gps 
+{
 Map::Map(const Tile position) : position_(position)
 {
 }
@@ -21,6 +21,12 @@ void Map::load_dimension(std::ifstream& input)
 	std::cout<< "line " << lines_ << ":" << "columns" << columns_ << "\n";
 }
 
+
+
+const Tile& Map::operator()(const int x, const int y) const 
+{
+		return map_[y][x];
+}
 
 
 void Map::create_matrice()
@@ -58,4 +64,5 @@ void Map::load_map(std::ifstream& input)
 	else
 	    throw std::ios_base::failure("The file is not open or does not exist");
 
+}
 }

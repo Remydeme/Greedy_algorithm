@@ -1,13 +1,14 @@
 #pragma once
 #include <iostream>
-
+namespace gps
+{
 class Tile
 {
 	private:
 
 		int x_;
 		int y_;
-		char value_;
+		char value_ = 0;
 	public:
 
 	     Tile(int x, int y);
@@ -37,3 +38,4 @@ class Tile
 Tile operator -(const Tile& t_1, const Tile& t_2);
 Tile operator +(const Tile& t_1, const Tile& t_2);
 int  operator *(const Tile& t_1, const Tile& t_2);
+}
