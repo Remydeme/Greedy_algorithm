@@ -22,8 +22,6 @@ void Map::load_dimension(std::ifstream& input)
 }
 
 
-int next
-
 
 void Map::create_matrice()
 {
