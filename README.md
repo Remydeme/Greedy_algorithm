@@ -1,13 +1,5 @@
 # GREEDY ALGORITHM
 
-__The project tagline is cool and witty__
-
-This is where you write a paragrah or so describing your project to the person
-reading it knows what your project is all about. You could skip this part but
-after all the hard work you put into creating your project, it would be a shame
-if nobody ever used it, because you didn't take the time to explain it to them.
-You don't have to write a lot - just enough to get them interested.
-
 
 ## FEATURES
 
